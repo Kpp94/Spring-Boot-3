@@ -18,6 +18,7 @@ import java.time.LocalDateTime;
 @EqualsAndHashCode(of = "id")
 public class Consulta {
 
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,6 +31,6 @@ public class Consulta {
     @JoinColumn(name = "paciente_id")
     private Paciente paciente;
 
-    private LocalDateTime data;
+    private LocalDateTime fecha;
 
 }
